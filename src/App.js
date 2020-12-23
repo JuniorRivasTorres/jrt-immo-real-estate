@@ -6,7 +6,8 @@ import InfoSection from './components/InfoSection';
 import GlobalStyle from './globalStyles';
 import Hero from './components/Hero';
 import { SliderData } from './data/SliderData';
-import { InfoData } from './data/InfoData';
+import { InfoData, InfoDataTwo } from './data/InfoData';
+import Features from './components/Features';
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
       <Hero slides={SliderData} />
       <InfoSection {...InfoData}/>
       <Listings />
+      <Features />
+      <InfoSection {...InfoDataTwo}/>
     </>
   );
 }

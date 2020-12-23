@@ -31,6 +31,7 @@ const NavLink = css`
 const Logo = styled(Link)`
     ${NavLink}
     font-style: italic;
+    
 `;
 
 const MenuBars = styled(FaBars)`
@@ -74,11 +75,11 @@ const NavBtn = styled.div`
     }
 `;
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <Nav>
-            <Logo to="/">JRT</Logo>
-            <MenuBars/>
+            <Logo to='/'>JRT</Logo>
+            <MenuBars onClick={toggle}/>
             <NavMenu>
                 {menuData.map((item, index) => (
                     <NavMenuLinks to={item.link} key={index}>

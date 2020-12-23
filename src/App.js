@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import { SliderData } from './data/SliderData';
 import { InfoData, InfoDataTwo } from './data/InfoData';
 import Features from './components/Features';
+import Footer from './components/Footer'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Listings />
       <Features />
       <InfoSection {...InfoDataTwo}/>
+      <Footer/>
     </>
   );
 }

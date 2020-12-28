@@ -12,7 +12,7 @@ const Section = styled.section`
     color: #fff;
     width: 100%;
     min-height: 600px;
-    padding: 3rem;
+    padding: 3rem calc((100vw - 1300px) / 2);
 `;
 
 const Container = styled.div`
@@ -55,7 +55,19 @@ const FooterInfo = styled.div`
         padding: 1rem 0rem;
     }
     `
-const Contact = styled.div``
+const Contact = styled.div`
+ width: 50%;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+
+
+ @media screen and (max-width: 768px) {
+     width: 100%;
+     justify-content: flex-start;
+
+ }
+`;
 
 
 const Footer = () => {

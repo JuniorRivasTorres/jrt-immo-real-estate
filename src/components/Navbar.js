@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styled, {css} from 'styled-components/macro'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import {menuData} from '../data/MenuData'
 import { Button } from './Button';
 import { FaBars} from 'react-icons/fa';
@@ -30,8 +30,7 @@ const NavLink = css`
 
 const Logo = styled(Link)`
     ${NavLink}
-    font-style: italic;
-    
+    font-style: italic;   
 `;
 
 const MenuBars = styled(FaBars)`
@@ -76,8 +75,35 @@ const NavBtn = styled.div`
 `;
 
 const Navbar = ({toggle}) => {
+    const [navbar, setNavbar] = useState(false)
+    const location = useLocation()
+
+    const changeBackground = () => {
+        if(window.pageYOffset >= 60) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    useEffect (() => {
+        const watchSCroll = () => {
+            window.addEventListener('scroll', changeBackground)
+        }
+
+        watchSCroll()
+            return () => {
+            window.removeEventListener('scroll', changeBackground)
+    }
+    }, [])
+
+    let style = {
+        backgroundColor: navbar || location.pathname !== "/" ? '#CD853F' : 'transparent',
+         transition: '0.4s'
+    }
+
     return (
-        <Nav>
+        <Nav style={style}>
             <Logo to='/'>JRT</Logo>
             <MenuBars onClick={toggle}/>
             <NavMenu>

@@ -2,6 +2,10 @@ import  ImageOne from '../images/house.jpg'
 import  ImageTwo from '../images/house-2.jpg'
 import  ImageThree from '../images/house-3.jpg'
 import  ImageFour from '../images/house-4.jpg'
+import  ImageFive from '../images/house5.jpg'
+import  ImageSix from '../images/house6.jpg' 
+import ImageSeven from '../images/house7.jpg'
+
 
 export const SliderData = [
     {
@@ -38,30 +42,30 @@ export const SliderData = [
     }
 ];
 
-//export const SliderDataTwo = [
-//   {
-//      title: 'House in Las Vegas, Nevada',
-//     price: '$8,980,000',
-//        path: '/homes',
-//        label: 'View Home',
-//       image: ImageFive,
-//         alt: 'House'
-//     },
-//    
-//    {
-//        title: 'House in Houston, Texas',
-//        price: '$3,460,000',
-//        path: '/homes',
-//        label: 'View Home',
-//        image: ImageSix,
-//        alt: 'House'
-//    },
-//    {
-//        title: 'House in Alajueala, Costa Rica',
-//        price: '$5,420,000',
-//        path: '/homes',
-//        label: 'View Home',
-//        image: ImageSeven,
-//        alt: 'House'
-//    }
-//];
+export const SliderDataTwo = [
+   {
+     title: 'House in Las Vegas, Nevada',
+     price: '$8,980,000',
+        path: '/homes',
+        label: 'View Home',
+       image: ImageFive,
+         alt: 'House'
+     },
+    
+    {
+        title: 'House in Houston, Texas',
+        price: '$3,460,000',
+        path: '/homes',
+        label: 'View Home',
+        image: ImageSix,
+        alt: 'House'
+    },
+    {
+        title: 'House in Alajueala, Costa Rica',
+        price: '$5,420,000',
+        path: '/homes',
+        label: 'View Home',
+        image: ImageSeven,
+        alt: 'House'
+    }
+];

@@ -10,7 +10,7 @@ const Nav = styled.nav`
     height: 60px;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 2rem 4rem;
     z-index: 100;
     position: fixed;
     width: 100%;
@@ -98,7 +98,7 @@ const Navbar = ({toggle}) => {
     }, [])
 
     let style = {
-        backgroundColor: navbar || location.pathname !== "/" ? '#CD853F' : 'transparent',
+        backgroundColor: navbar || location.pathname !== "/" ? '#2F2F2F' : 'transparent',
          transition: '0.4s'
     }
 

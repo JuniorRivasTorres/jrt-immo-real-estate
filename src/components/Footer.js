@@ -8,7 +8,7 @@ import {Button} from './Button'
 
 
 const Section = styled.section`
-    background: #000d1a;
+    background: #000000;
     color: #fff;
     width: 100%;
     min-height: 600px;
@@ -100,8 +100,7 @@ const Footer = () => {
             <div>
                 <SocialLinks styleClass="footer-links">
                 </SocialLinks>
-                <h4>copyright&copy;{new Date().getFullYear()}
-                <span>JRT</span> tous droits réservé
+                <h4>copyright&copy;{new Date().getFullYear()} <span>JRTWEBSTUDIO</span> tous droits réservé
                 </h4>
             </div>
         </footer>

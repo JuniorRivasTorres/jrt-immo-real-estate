@@ -1,18 +1,18 @@
 .footer {
     height: 9rem;
-    background: #000D1A;
+    background: #000000;
     text-align: center;
     display: grid;
     place-items: center;
   }
   .footer h4 {
     margin-top: 0.5rem;
-    color: var(--clr-white);
+    color: #fff;
     font-weight: normal;
     text-transform: uppercase;
   }
   .footer h4 span {
-    color: var(--clr-primary-5);
+    color: #6e737d;
   }
   .footer-links {
     margin: 0 auto 1rem auto;
@@ -21,7 +21,7 @@
     color: var(--clr-white);
   }
   .footer .social-link:hover {
-    color: #CD853F;
+    color: #6e737d;
   }
   
   :root {

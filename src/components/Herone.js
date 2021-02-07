@@ -1,6 +1,6 @@
 import React from "react"
 import SocialLinks from "../constants/socialLinks"
-import Video from "../assets/videos/video.mp4"
+import Video from "../videos/video.mp4"
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 import './Herone.css'
@@ -25,7 +25,7 @@ const Herone = () => {
                 <SocialLinks/>
               </div>
             </article>
-            <Image fluid={fluid} className="herone-img"/>
+           
           </div>
         </header>
         </heroneContainer>

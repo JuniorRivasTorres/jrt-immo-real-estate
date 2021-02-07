@@ -3,7 +3,8 @@ import styled, {css} from 'styled-components/macro'
 import { Link, useLocation } from 'react-router-dom'
 import {menuData} from '../data/MenuData'
 import { Button } from './Button';
-import { FaBars} from 'react-icons/fa';
+import { GoThreeBars } from 'react-icons/go';
+import  jrt from '../images/jrt.png'
 
 
 const Nav = styled.nav`
@@ -21,27 +22,51 @@ const NavLink = css`
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 0 1rem;
-    height: 100%;
+    padding: 0 2rem;
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1.7;
     cursor: pointer;
     text-decoration: none;
+    font: Montserrat, sans-serif;
+    margin: 0px 10px;
 `
 
 
 const Logo = styled(Link)`
     ${NavLink}
-    font-style: italic;   
+    font-style: italic;  
+    
+    img {
+        width: 110px;
+        height: 95px;
+        object-fit: cover;
+        margin-top: 15px;
+
+        @media screen and (max-width: 768px) {
+          
+           margin-left: -75px;
+           width: 95px;
+           height: 80px;
+           position: absolute;
+        }
+
+    }
+   
 `;
 
-const MenuBars = styled(FaBars)`
+const MenuBars = styled(GoThreeBars)`
     display: none;
+    margin-top: 10px;
+    
+    
 
     @media screen and (max-width: 768px) {
         display: block;
         color: white;
         background-size: contain;
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
         cursor: pointer;
         position: absolute;
         top: 0;
@@ -68,6 +93,7 @@ const NavBtn = styled.div`
     display: flex;
     align-items: center;
     margin-right: 24px; 
+   
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -98,13 +124,14 @@ const Navbar = ({toggle}) => {
     }, [])
 
     let style = {
-        backgroundColor: navbar || location.pathname !== "/" ? '#2F2F2F' : 'transparent',
+        backgroundColor: navbar || location.pathname !== "/" ? '#000000CC' : 'transparent',
          transition: '0.4s'
     }
 
     return (
         <Nav style={style}>
-            <Logo to='/'>JRT</Logo>
+            <Logo to='/'>
+               <img src={jrt}/></Logo>
             <MenuBars onClick={toggle}/>
             <NavMenu>
                 {menuData.map((item, index) => (

@@ -1,7 +1,7 @@
-import  ImageOne from '../images/house.jpg' 
-import  ImageTwo from '../images/house-2.jpg'
-import  ImageThree from '../images/house-3.jpg'
-import  ImageFour from '../images/house-4.jpg'
+import  ImageOne from '../images/cuisinesoleil.jpg' 
+import  ImageTwo from '../images/blakc.jpeg'
+import  ImageThree from '../images/toilet.jpg'
+import  ImageFour from '../images/cuisinemetal.jpg'
 import  ImageFive from '../images/house5.jpg'
 import  ImageSix from '../images/house6.jpg' 
 import ImageSeven from '../images/house7.jpg'
@@ -9,15 +9,15 @@ import ImageSeven from '../images/house7.jpg'
 
 export const SliderData = [
     {
-        title: 'Luxury Villa in Bali, Indonesia',
+        title: " evaluation gratuite ",
         price: '$4,280,000',
         path: '/homes',
-        label: 'View Home',
+        label: 'CONTACTEZ MOI',
         image: ImageOne,
         alt: 'House'
     },
     {
-        title: 'House in San Jose, Costa Rica',
+        title: ' VA ',
         price: '$2,860,000',
         path: '/homes',
         label: 'View Home',
@@ -25,7 +25,7 @@ export const SliderData = [
         alt: 'House'
     },
     {
-        title: 'House in Calabasas, California',
+        title: 'VENDRE PLEIN ' ,
         price: '$8,420,000',
         path: '/homes',
         label: 'View Home',
@@ -33,7 +33,7 @@ export const SliderData = [
         alt: 'House'
     },
     {
-        title: 'House in Houston, Texas',
+        title: 'DE MAISON  ',
         price: '$6,660,000',
         path: '/homes',
         label: 'View Home',

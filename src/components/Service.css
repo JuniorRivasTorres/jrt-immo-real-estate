@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&display=swap');
 
 :root {
   /* dark shades of primary color*/
@@ -62,8 +63,8 @@ h1 {
 }
 
 h2 {
-  font-family: 'Roboto Slab', serif;
-  font-size: 2rem;
+  font-family: 'Cormorant', serif;
+  font-size: 28px;
 }
 .section-title {
   margin-top: 50px;
@@ -85,12 +86,13 @@ h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
   }
-  .service .underline {
-    width: 3rem;
+  .service.underline {
+    width: 5rem;
     height: 0.12rem;
     -webkit-transition: var(--transition);
-    transition: var(--transition);
-  }
+    transition: var(--transition);  
+    }
+  
   .service p {
     -webkit-transition: var(--transition);
     transition: var(--transition);
@@ -122,7 +124,7 @@ h2 {
     }
     .underline {
       width: 5rem;
-      height: 0.25rem;
+      height: 0.12rem;
       margin-bottom: 1.25rem;
       background: #2F2F2F;
       margin-left: auto;

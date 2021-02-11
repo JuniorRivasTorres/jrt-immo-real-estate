@@ -39,7 +39,7 @@ function App() {
         <Route path='/Accueil'  component={About} />
         <Route path='/homes'  component={Homes} />
         <Route path='/rentals' component={Rentals} />
-        <Route path='/contact'  component={Contact} />
+        <Route path='/contact' component={Contact} />
         <Route path='/about'  component={About} />
       
       </Switch>

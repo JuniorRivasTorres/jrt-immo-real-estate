@@ -11,10 +11,14 @@ const Nav = styled.nav`
     height: 60px;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 4rem;
+    padding: 3rem 4rem;
     z-index: 100;
     position: fixed;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+    padding: 2rem 4rem;
+    }
  
 `;
 
@@ -131,7 +135,7 @@ const Navbar = ({toggle}) => {
     return (
         <Nav style={style}>
             <Logo to='/'>
-               <img src={jrt}/></Logo>
+               <img src={jrt} alt="jrt"/></Logo>
             <MenuBars onClick={toggle}/>
             <NavMenu>
                 {menuData.map((item, index) => (

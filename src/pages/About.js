@@ -11,9 +11,9 @@ const About = () => {
     return (
         <>
             <Hero slides={SliderData} />
+            <Features />
             <InfoSection {...InfoData} />
             <Listings />
-            <Features />
             <InfoSection {...InfoDataTwo}/> 
          
         </>

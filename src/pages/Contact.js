@@ -1,10 +1,15 @@
 import React from 'react'
-import Features from '../components/Features';
+import Services from  '../components/Services'
+import Listings from '../components/Listings'
 
 const Contact = () => {
-    return <Features />;
-       
+    return (
+      <>
+      <Listings />
+      <Services />
+      </>
+    )
+    }
     
-};
-
-export default Contact;
+    export default Contact;
+    

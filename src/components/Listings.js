@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import {Link} from 'react-router-dom'
 import {IoMdArrowRoundForward} from 'react-icons/io'
-import HomeOne from '../images/house.jpg'
+import HomeOne from '../images/facade.jpg'
 import HomeTwo from '../images/house-3.jpg'
 
 const Section = styled.section`
@@ -88,7 +88,7 @@ const Listings = () => {
                     data-aos-duration='1000'
                     data-aos-once="true"
                     data-aos-anchor-placement='center bottom'
-                    >Voir nos belles maisons</h1>
+                    >Maisons à vendre</h1>
                 </Heading>
                 <InfoRow>   
                     <InfoWrap
@@ -98,7 +98,7 @@ const Listings = () => {
                     data-aos-anchor-placement='center bottom'
                     >
                         <Image src={HomeOne} alt='home' />
-                        <h2>8 Bed 10 bath House in Venice, California</h2>
+                        <h2>3 chambres 76 000.pc, Terrebonne</h2>
                         <InfoLink to='/home'>
                             <p>View Details</p>
                             <Arrow/>

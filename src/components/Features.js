@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Button} from './Button';
-import ImageOne from '../images/kitchen.jpg' 
+import ImageOne from '../images/junior.jpg' 
 
 const Section = styled.section`
-    background: #000d1a;
-    padding: 12rem 0rem;
+    background: BLACK;
+    padding: 7rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@ const Section = styled.section`
     `; 
 
     const Container = styled.div`
-        background: #fff;
+        background: BLACK;
         padding: 3rem 2rem;
         position: relative;
     `;
@@ -45,11 +45,13 @@ const Section = styled.section`
         h1 {
             margin-bottom: 2rem;
             font-size: 2rem;
+            color: white;
         }
 
         p {
             margin-bottom: 1rem;
             line-height: 1.5;
+            color: white;
         }
     `;
 
@@ -72,6 +74,7 @@ const Section = styled.section`
     `;
     
     const Image = styled.img`
+        opacity: 1;
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -91,14 +94,10 @@ const Features = () => {
                     data-aos-once='true'
                     data-aos-anchor-placement='center bottom'
                     >
-                        <h1>Stunning Interior</h1>
-                        <p>Loremdjbhvhlavhvhvafhvfvlfvdvfvf 
-                            hjkhjkkjgkgjhghgjkggjhgkgkgghkgg
-                            jhhjkhjkhjhjhjhjhjkhjkhjkh
+                        <h1>Junior Rivas Torres </h1>
+                        <p>Courtier immobilier résidentiel
                         </p>
-                        <p>Loremdjbhvhlavhvhvafhvfvlfv
-                            hjhljkghgjhgjhf
-                            hjhjhjhjhjhjkhjhhdvfvf
+                        <p>Passionée de l'immobilier depuis 7 ans
                         </p>
                         <Button to="/homes">Learn More </Button>
                      </Content>

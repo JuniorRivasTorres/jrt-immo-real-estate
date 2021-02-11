@@ -90,6 +90,7 @@ const HeroContent = styled.div`
 `;
 const Arrow = styled(IoMdArrowRoundForward)`
     margin-left: 0.5rem;
+    
 `;
 
 const SliderButtons = styled.div`
@@ -105,7 +106,7 @@ const arrowButtons = css`
     height: 50px;
     color: #fff;
     cursor: pointer;
-    background: #000d1a;
+    background: #000000CC;
     border-radius: 50px;
     padding: 10px;
     margin-right: 1rem;

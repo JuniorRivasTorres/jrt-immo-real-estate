@@ -76,7 +76,7 @@ const Footer = () => {
           <Container>
             <FooterTop>
                 <Quote>
-                    <h3>Lets find <br />your dream home</h3>
+                    <h3>TROUVONS VOTRE MAISON  <br />DE RÊVE  </h3>
                 </Quote>
                 <FooterInfo>
                     <h4>Contactez-moi</h4>
@@ -93,7 +93,7 @@ const Footer = () => {
         </FooterTop>  
         <Contact>
             <Button to='/homes'>
-                Lets' talk <IoMdArrowRoundForward/>
+                INFO <IoMdArrowRoundForward/>
             </Button>
         </Contact>
         <footer className="footer">

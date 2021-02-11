@@ -6,16 +6,18 @@ import Hero from '../components/Hero';
 import { SliderData } from '../data/SliderData';
 import InfoSection from '../components/InfoSection'
 import Services from  '../components/Services'
+import Email from '../components/Email'
 
 const Home = () => {
     return (
         <>
             <Hero slides={SliderData} />
             <Services />
+            <Features />
             <InfoSection {...InfoData} />
             <Listings />
-            <Features />
             <InfoSection {...InfoDataTwo}/> 
+            <Email/>
         </>
     );
 };

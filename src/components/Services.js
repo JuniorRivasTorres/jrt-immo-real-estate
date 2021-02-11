@@ -6,7 +6,7 @@ import './Service.css';
 const Services = () => {
   return (
     <section className="section bg-grey">
-      <Title title="services" />
+      <Title title="CONSEILS D'EXPERTS" />
       <div className="section-center services-center">
         {services.map(service => {
           const { id, icon, title, text } = service

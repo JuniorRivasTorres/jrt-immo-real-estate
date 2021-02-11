@@ -15,7 +15,9 @@
     color: #6e737d;
   }
   .footer-links {
+    color: black;
     margin: 0 auto 1rem auto;
+   
   }
   .footer .social-link {
     color: var(--clr-white);
@@ -26,6 +28,6 @@
   
   :root {
     --clr-primary-5: #2caeba;
-    --clr-white: #fff;
+    --clr-white: black;
 
   }

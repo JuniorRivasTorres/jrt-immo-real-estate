@@ -6,14 +6,15 @@
   }
   .social-link {
     font-size: 1.75rem;
-    color: var(--clr-grey-1);
+    color:black;
     transition: var(--transition);
   }
   .social-link:hover {
-    color: var(--clr-primary-5);
+    color: red;
   }
 
   :root {
     --clr-primary-5: #2caeba;
     --clr-grey-1: hsl(209, 61%, 16%);
+    color: black;
   }
